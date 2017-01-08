@@ -32,8 +32,8 @@ Panel
     !text: tr('Show frame rate')
 
   OptionCheckBox
-    id: enableLights
-    !text: tr('Enable lights')
+    id: 
+    !text: tr('Enable lights (Always ON)')
 
   OptionCheckBox
     id: fullscreen
@@ -103,12 +103,4 @@ Panel
       local value = modules.client_options.getOption('ambientLight')
       self:setText(tr('Ambient light: %s%%', value))
 
-  OptionScrollbar
-    id: ambientLight
-    anchors.left: parent.left
-    anchors.right: parent.right
-    anchors.top: prev.bottom
-    margin-top: 3
-    minimum: 0
-    maximum: 100
 

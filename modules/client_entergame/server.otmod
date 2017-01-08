@@ -1,0 +1,16 @@
+Module
+  name: addon_server
+  description: Single server and protocol
+  author: iLeet
+  website: n/a
+  version: 0.0.2
+  
+
+  autoload: true
+  autoload-priority: 1000
+
+  dependencies:
+    -client_entergame
+
+  @onLoad: |
+    EnterGame.setUniqueServer("192.168.1.115", 7171, 772)

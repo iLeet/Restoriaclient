@@ -1,6 +1,6 @@
 local defaultOptions = {
   vsync = false,
-  showFps = false,
+  showFps = true,
   showPing = false,
   fullscreen = false,
   classicControl = false,
@@ -14,7 +14,7 @@ local defaultOptions = {
   showLevelsInConsole = true,
   showPrivateMessagesInConsole = true,
   showPrivateMessagesOnScreen = true,
-  showLeftPanel = false,
+  showLeftPanel = true,
   foregroundFrameRate = 61,
   backgroundFrameRate = 201,
   painterEngine = 0,

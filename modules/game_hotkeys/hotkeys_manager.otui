@@ -105,13 +105,13 @@ MainWindow
 
   Button
     id: selectObjectButton
-    !text: tr('Select object')
+    !text: tr('Disabled')
     width: 128
     enabled: false
     anchors.left: prev.right
     anchors.top: prev.top
     margin-left: 10
-    @onClick: modules.game_hotkeys.startChooseItem()
+    @onClick: 
 
   Button
     id: clearObjectButton
@@ -126,7 +126,7 @@ MainWindow
 
   ButtonBox
     id: useOnSelf
-    !text: tr('Use on yourself')
+    !text: tr('Unused')
     width: 128
     enabled: false
     anchors.left: selectObjectButton.right
@@ -137,7 +137,7 @@ MainWindow
 
   ButtonBox
     id: useOnTarget
-    !text: tr('Use on target')
+    !text: tr('Unused')
     width: 128
     enabled: false
     anchors.left: prev.left
@@ -148,7 +148,7 @@ MainWindow
 
   ButtonBox
     id: useWith
-    !text: tr('With crosshair')
+    !text: tr('Unused')
     width: 128
     enabled: false
     anchors.left: prev.left

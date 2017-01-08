@@ -436,16 +436,16 @@ end
 function updateHotkeyLabel(hotkeyLabel)
   if not hotkeyLabel then return end
   if hotkeyLabel.useType == HOTKEY_MANAGER_USEONSELF then
-    hotkeyLabel:setText(tr('%s: (use object on yourself)', hotkeyLabel.keyCombo))
+    hotkeyLabel:setText(tr('%s: (DO NOT CHEAT, CLEAR OBJECT)', hotkeyLabel.keyCombo))
     hotkeyLabel:setColor(HotkeyColors.itemUseSelf)
   elseif hotkeyLabel.useType == HOTKEY_MANAGER_USEONTARGET then
-    hotkeyLabel:setText(tr('%s: (use object on target)', hotkeyLabel.keyCombo))
+    hotkeyLabel:setText(tr('%s: (DO NOT CHEAT, CLEAR OBJECT)', hotkeyLabel.keyCombo))
     hotkeyLabel:setColor(HotkeyColors.itemUseTarget)
   elseif hotkeyLabel.useType == HOTKEY_MANAGER_USEWITH then
-    hotkeyLabel:setText(tr('%s: (use object with crosshair)', hotkeyLabel.keyCombo))
+    hotkeyLabel:setText(tr('%s: (DO NOT CHEAT, CLEAR OBJECT)', hotkeyLabel.keyCombo))
     hotkeyLabel:setColor(HotkeyColors.itemUseWith)
   elseif hotkeyLabel.itemId ~= nil then
-    hotkeyLabel:setText(tr('%s: (use object)', hotkeyLabel.keyCombo))
+    hotkeyLabel:setText(tr('%s: (DO NOT CHEAT, CLEAR OBJECT)', hotkeyLabel.keyCombo))
     hotkeyLabel:setColor(HotkeyColors.itemUse)
   else
     local text = hotkeyLabel.keyCombo .. ': '

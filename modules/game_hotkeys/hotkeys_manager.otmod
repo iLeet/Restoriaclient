@@ -1,7 +1,7 @@
 Module
   name: game_hotkeys
   description: Manage client hotkeys
-  author: andrefaramir, BeniS
+  author: andrefaramir, BeniS, iLeet
   website: www.otclient.info
   sandboxed: true
   scripts: [ hotkeys_manager ]
